@@ -1,136 +1,134 @@
 <!--#include virtual="/server/header.html" -->
-<!-- Parent-Version: 1.79 -->
+<!-- Parent-Version: 1.92 -->
+<!-- This page is derived from /server/standards/boilerplate.html -->
 <title>GNU Kart - GNU Project - Free Software Foundation</title>
 <!--#include virtual="/server/gnun/initial-translations-list.html" -->
 <!--#include virtual="/server/banner.html" -->
+<div class="reduced-width">
+
 <h2>GNU Kart</h2>
-
-
-<h3>Introduction to GNU Kart</h3>
+<hr class="thin" />
 
 <p>
-This is a web page about GNU Kart, which is a simple racing game for GNU. 
+GNU Kart is a simple racing game for GNU. It uses OpenGL and SDL for
+graphics and features GNU characters. Its aim will be extensibility
+so that a general kind of racing game can be made, with any sorts of
+features.
 </p>
 
-<h3>News</h3>
-
-<h4>May 11, 2010</h4>
-<hr/>
-
-SpeedX is now GNU Kart. 
-The "X" in the name "SpeedX" referred to the X window system, which especially made sense because it heavily used X11 libraries. 
-GNU Kart doesn't use X11 libraries directly, and mostly uses OpenGL. 
-If you check out the latest source in Bazaar, you will see that I am testing a track format that is based on spheres of different radii connected by edges that form tubes that tell which edge a player is traveling along and which sphere they are heading toward. 
-<br/>
-
-<h4>April 15, 2009</h4>
-<hr/>
-
-I hope to release something in the summer when I have more time. 
-I tried to develop a voxel engine because at the time that I took over the project, OpenGL was not 100% free on gNewSense. 
-Now that it is, I realize that my voxel engine is slow, cumbersome, and extremely limited. 
-Also, I'm not sure how to extend it. 
-So I've been hacking on OpenGL for a bit and I think I should have something good soon. 
-Even without hardware acceleration (which I don't have, since there are very few free 3D graphics drivers), OpenGL seems fine as long as the scene stays simple, and the point of this game is to be a simple, easily playable game that anyone can enjoy quickly so it seems like it will work fine, even on a system where Neverball or SuperTuxKart are not playable. 
-
-<h3>Downloading GNU Kart</h3>
+<h3>Download</h3>
 
 <p>
-GNU Kart has not yet had a release in years as it is being rewritten. 
-<br/>
+GNU Kart has not had a stable release in years as it is being rewritten.<br />
+An alpha release is available from the GNU alpha server
+(<a href="https://alpha.gnu.org/gnu/gnukart/">HTTPS</a>,&nbsp;
+<a href="http://alpha.gnu.org/gnu/gnukart/">HTTP</a>,&nbsp;
+<a href="ftp://alpha.gnu.org/gnu/gnukart/">FTP</a>).</p>
 
-<a href="http://ftp.gnu.org/gnu/gnukart/">http://ftp.gnu.org/gnu/gnukart/</a>
-[via http] and
-<a href="ftp://ftp.gnu.org/gnu/gnukart/">ftp://ftp.gnu.org/gnu/gnukart/</a> 
-[via FTP].
-It can also be found on one of <a href="/prep/ftp.html">our FTP mirrors</a>;
-please use a mirror if possible.
-</p>
-
-<h3>Documentation</h3>
-
-<p>
-GNU Kart documentation can be found at
-<a href="/manual/">http://www.gnu.org/manual/</a>.
-You may also find more information about GNU Kart by running
-<em>info&nbsp;gnukart</em>, <em>man gnukart</em>, or looking at
-<em>/usr/doc/gnukart/</em> or <em>/usr/local/doc/gnukart/</em> 
-on your system.
-</p>
-
-<h3>Mailing Lists/Newsgroups</h3>
+<h3>Mailing Lists</h3>
 
 <!--
 <p>
-GNU Kart has two mailing lists: 
-<a href="mailto:help-gnukart@gnu.org">&lt;help-gnukart@gnu.org&gt;</a> and 
-<a href="mailto:bug-gnukart@gnu.org">&lt;bug-gnukart@gnu.org&gt;</a>.
-</p>
-
-<p>
-The main discussion list is 
-<a href="mailto:help-gnukart@gnu.org">&lt;help-gnukart@gnu.org&gt;</a>,
-and is used to discuss all aspects of GNU Kart, including development and porting.
-</p>
-
-<p>
-There is a separate list used for reporting bugs, 
-<a href="mailto:bug-gnukart@gnu.org">&lt;bug-gnukart@gnu.org&gt;</a>. 
-For details on submitting a bug report, please see the section 
-<a href="#bug">Report a Bug</a> below.
-</p>
+GNU Kart has a mailing list for bug reports and development-related
+questions:<br />
+&lt;<a href="mailto:bug-gnukart@gnu.org">bug-gnukart@gnu.org</a>&gt;
+(<a href="https://lists.gnu.org/mailman/listinfo/bug-gnukart">web
+interface</a>).</p> 
 -->
+
+<p>GNU Kart has a mailing list, but currently doesn't use it. Please
+contact the maintainer for bug reports and development-related questions.
+The <a href="https://lists.gnu.org/archive/html/bug-gnukart/">mailing
+list archives</a> are still available.</p>
 
 <p>
 Announcements about GNU Kart and most other GNU software are made on
-<a href="mailto:info-gnu@gnu.org">&lt;info-gnu@gnu.org&gt;</a>.
+&lt;<a href="mailto:info-gnu@gnu.org">info-gnu@gnu.org</a>&gt;
+(<a href="http://lists.gnu.org/mailman/listinfo/info-gnu">web
+interface</a>).
 </p>
 
-<p>
-To subscribe to these or any GNU mailing lists, please send an empty mail with
-a Subject: header line of just "subscribe" to the relevant -request
-list.  For example, to subscribe yourself to GNU announcement list, you
-would send mail to <a
-href="mailto:info-gnu-request@gnu.org">&lt;info-gnu-request@gnu.org&gt;</a>
-with no body and a Subject: header line of just "subscribe".  Or you can
-use the <a href="http://lists.gnu.org/mailman/listinfo/info-gnu">mailing
-list web interface</a>.
-</p>
+<h3>Getting involved</h3>
 
-<!--
-<h4>Request an Enhancement</h4>
+<p>Development of GNU Kart,
+and GNU in general, is a volunteer effort, and you can contribute.  For
+information, please read <a href="/help/">How to help GNU</a>.  If you'd
+like to get involved, please contact the maintainer.</p>
 
-<p>
-If you would like any new feature to be included in future versions 
-of GNU Kart, please send a request to
-<a href="mailto:help-gnukart@gnu.org">&lt;help-gnukart@gnu.org&gt;</a>.
-</p>
+<dl>
+<dt>Development</dt>
+<dd>
+<p>For development sources and other information, please see the
+<a href="https://savannah.gnu.org/projects/gnukart/">GNU Kart project
+page</a> at <a href="https://savannah.gnu.org">savannah.gnu.org</a>.</p>
+</dd>
 
-<p>
-Please remember that development of GNU Kart is a volunteer effort, and you 
-can also contribute to its development. For information about contributing
-to the GNU Project, please read <a href="/help/">How to help GNU</a>.
-</p>
-
-<h3>Report a Bug</h3>
-
-<p>
-If you think you have found a bug in GNU Kart, then please send
-as complete a report as possible to
-<a href="mailto:bug-gnukart@gnu.org">&lt;bug-gnukart@gnu.org&gt;</a>.
-</p>
--->
-
-<h3>Maintainer</h3>
-
-<p>
-GNU Kart is currently being maintained by Sébastien Diaz
-(sebastien.diaz at gmail.com). The previous maintainer was
+<dt>Maintainer</dt>
+<dd>
+<p>GNU Kart is currently maintained by Sébastien Diaz
+&lt;sebastien.diaz at gmail.com&gt;. The previous maintainer was
 <a href="http://www.ericphutchins.com/">Eric P. Hutchins</a>
-<a href="mailto:hutchiep190@potsdam.edu">&lt;hutchiep190@potsdam.edu&gt;</a>.
-</p>
+&lt;<a href="mailto:hutchiep190@potsdam.edu">hutchiep190@potsdam.edu</a>&gt;.</p>
+</dd>
+</dl>
 
+<h3>History</h3>
 
+<dl>
+<dt>September 14, 2010: GNU Kart Alpha 0.3.0</dt>
+<dd>
+<p>GNU Kart is a kart racing game for GNU using characters based on
+GNU/Free Software stuff.</p>
+
+<p>There are currently three characters that have a (incomplete) 3D model
+to them: GNU, guile, and icecat.</p>
+
+<p>You have to run it from the command line and it only lets you go
+through one lap and then quits, but the computer characters will drive
+around the track nicely.</p>
+</dd>
+
+<dt>May 11, 2010</dt>
+<dd>
+<p>SpeedX is now GNU Kart. 
+The “X” in the name “SpeedX” referred to the X window system, which
+especially made sense because it heavily used X11 libraries. 
+GNU Kart doesn't use X11 libraries directly, and mostly uses OpenGL. 
+If you check out the latest source in Bazaar, you will see that I am
+testing a track format that is based on spheres of different radii
+connected by edges that form tubes that tell which edge a player is
+traveling along and which sphere they are heading toward.</p>
+</dd>
+
+<dt>April 15, 2009</dt>
+<dd>
+<p>I hope to release something in the summer when I have more time. 
+I tried to develop a voxel engine because at the time that I took over
+the project, OpenGL was not 100% free on gNewSense. 
+Now that it is, I realize that my voxel engine is slow, cumbersome,
+and extremely limited. 
+Also, I'm not sure how to extend it. 
+So I've been hacking on OpenGL for a bit and I think I should have
+something good soon. 
+Even without hardware acceleration (which I don't have, since there are
+very few free 3D graphics drivers), OpenGL seems fine as long as the
+scene stays simple, and the point of this game is to be a simple, easily
+playable game that anyone can enjoy quickly so it seems like it will
+work fine, even on a system where Neverball or SuperTuxKart are not
+playable.</p>
+</dd>
+</dl>
+
+<h3>Licensing</h3>
+
+<p>GNU Kart
+is free software; you can redistribute it and/or modify it under the
+terms of the <a href="/licenses/gpl.html"
+rel="license">GNU General Public License</a> as published by the Free
+Software Foundation; either version&nbsp;3 of the License, or (at your
+option) any later version.</p>
+
+</div>
 </div><!-- for id="content", starts in the include above -->
 <!--#include virtual="/server/footer.html" -->
 <div id="footer">
@@ -140,11 +138,11 @@ GNU Kart is currently being maintained by Sébastien Diaz
 <a href="mailto:gnu@gnu.org">&lt;gnu@gnu.org&gt;</a>.
 There are also <a href="/contact/">other ways to contact</a>
 the FSF.  Broken links and other corrections or suggestions can be sent
-to <a href="mailto:sebastien.diaz@gmail.com">&lt;sebastien.diaz@gmail.com&gt;</a>.</p>
+to &lt;sebastien.diaz at gmail.com&gt;.</p>
 
 <p>Please see the <a
 href="/server/standards/README.translations.html">Translations
-README</a> for information on coordinating and submitting translations
+README</a> for information on coordinating and contributing translations
 of this article.</p>
 </div>
 
@@ -175,7 +173,7 @@ Commons Attribution-NoDerivatives 4.0 International License</a>.</p>
 
 <p class="unprintable">Updated:
 <!-- timestamp start -->
-$Date: 2019/10/06 19:43:38 $
+$Date: 2020/09/17 12:45:06 $
 <!-- timestamp end -->
 </p>
 </div>
